@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text editor</title>
+    <script
+      src="https://kit.fontawesome.com/c70448b9bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="text-5xl text-center mt-8 text-black">Text Editor</h2>
+    </header>
+    <main>
+      <section class="w-3/4 mx-auto bg-blue-300 p-4 mt-3 rounded-md">
+        <div class="mb-3 text-white">
+          <button
+            id="btn-style-bold"
+            class="px-2 py-1 rounded font-extrabold bg-black"
+          >
+            <i class="fa-solid fa-bold"></i>
+          </button>
+          <button
+            id="btn-style-italic"
+            class="px-2 py-1 rounded font-extrabold bg-black"
+          >
+            <i class="fa-solid fa-italic"></i>
+          </button>
+          <button
+            id="btn-style-underline"
+            class="px-2 py-1 rounded font-extrabold bg-black"
+          >
+            <i class="fa-solid fa-underline"></i>
+          </button>
+          <button
+            id="btn-style-align-left"
+            class="px-2 py-1 rounded font-extrabold bg-black"
+          >
+            <i class="fa-solid fa-align-left"></i>
+          </button>
+          <button
+            id="btn-style-align-center"
+            class="px-2 py-1 rounded font-extrabold bg-black"
+          >
+            <i class="fa-solid fa-align-center"></i>
+          </button>
+          <button
+            id="btn-style-align-right"
+            class="px-2 py-1 rounded font-extrabold bg-black"
+          >
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+          <button id="" class="px-2 py-1 rounded font-extrabold bg-black">
+            <input
+              class="w-12 text-black px-2"
+              value="16"
+              type="number"
+              name=""
+              id="font-size"
+              onchange="changeSize()"
+            />
+          </button>
+          <input
+            class="w-8 h-8 p-1 rounded-lg"
+            type="color"
+            name=""
+            id="color"
+          />
+        </div>
+        <textarea
+          class="w-full h-36 rounded-md px-3 py-2"
+          name=""
+          id="text-area"
+          cols="30"
+        >
+sample text</textarea
+        >
+      </section>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
